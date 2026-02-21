@@ -1,4 +1,7 @@
 import { LucideIcon } from 'lucide-react';
+import scrollkuraiImg from '../assets/images/scrollkurai.jpeg';
+import townbasketImg from '../assets/images/townbasket.jpeg';
+import eduquestImg from '../assets/images/eduquest.jpeg';
 
 export interface Project {
   id: string;
@@ -32,7 +35,7 @@ export const projects: Project[] = [
     ],
     impact: 'Reduced content production time by 40% and eliminated tool-switching fatigue for creative teams.',
     liveUrl: 'https://app.scrollkurai.in/auth',
-    imageUrl: 'https://picsum.photos/seed/scrollkurai/1200/800',
+    imageUrl: scrollkuraiImg,
     techStack: ['.NET', 'React', 'PostgreSQL', 'Azure']
   },
   {
@@ -51,7 +54,7 @@ export const projects: Project[] = [
     ],
     impact: 'Empowered 50+ local retailers to go digital, resulting in an average 25% increase in monthly revenue.',
     liveUrl: 'https://townbasket.scrollkurai.in/',
-    imageUrl: 'https://picsum.photos/seed/townbasket/1200/800',
+    imageUrl: townbasketImg,
     techStack: ['.NET', 'React', 'SQL Server', 'Redis']
   },
   {
@@ -70,7 +73,7 @@ export const projects: Project[] = [
     ],
     impact: 'Boosted student engagement by 60% and provided educators with data-driven insights to improve learning outcomes.',
     liveUrl: 'https://eduquest-teal.vercel.app/',
-    imageUrl: 'https://picsum.photos/seed/eduquest/1200/800',
+    imageUrl: eduquestImg,
     techStack: ['React', 'Node.js', 'MongoDB', 'Tailwind']
   }
 ];

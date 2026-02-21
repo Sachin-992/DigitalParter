@@ -32,7 +32,7 @@ import CTABanner from './components/CTABanner';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import { motion } from 'motion/react';
-
+import bannerImg from "./assets/images/about.jpeg";
 export default function App() {
   return (
     <div className="min-h-screen">
@@ -495,7 +495,7 @@ export default function App() {
               <div className="absolute -inset-4 bg-brand-100 rounded-[3rem] rotate-3 opacity-50" />
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl bg-white p-2">
                 <img 
-                  src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=800&auto=format&fit=crop" 
+                  src={bannerImg} 
                   alt="Founder - Software Developer & Entrepreneur" 
                   loading="lazy"
                   className="w-full h-auto rounded-[2rem] object-cover"
