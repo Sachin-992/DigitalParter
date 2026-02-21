@@ -1,6 +1,5 @@
 import { Check } from 'lucide-react';
 import { motion } from 'motion/react';
-import { useLanguage } from '../contexts/LanguageContext';
 
 interface PricingCardProps {
   name: string;
@@ -12,8 +11,6 @@ interface PricingCardProps {
 }
 
 export default function PricingCard({ name, price, description, features, isPopular, delay = 0 }: PricingCardProps) {
-  const { t } = useLanguage();
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -29,7 +26,7 @@ export default function PricingCard({ name, price, description, features, isPopu
       {isPopular && (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
           <span className="bg-gradient-to-r from-brand-600 to-brand-400 text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-[0.2em] shadow-lg shadow-brand-500/40">
-            {t.pricing.plans.business.popular}
+            Most Popular
           </span>
         </div>
       )}
@@ -46,7 +43,7 @@ export default function PricingCard({ name, price, description, features, isPopu
         <span className="text-5xl font-black tracking-tighter">{price}</span>
         {price !== 'Custom' && (
           <span className={`text-xs font-bold uppercase tracking-widest ${isPopular ? 'text-slate-500' : 'text-slate-400'}`}>
-            / {t.process.title.split(' ')[2] || 'project'}
+            / project
           </span>
         )}
       </div>
@@ -78,7 +75,7 @@ export default function PricingCard({ name, price, description, features, isPopu
             : 'bg-slate-900 text-white hover:bg-brand-600 shadow-lg shadow-slate-900/10 hover:scale-[1.02] active:scale-[0.98]'
         }`}
       >
-        {t.pricing.cta}
+        Get Started
       </a>
     </motion.div>
   );

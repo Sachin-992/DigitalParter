@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://digitalpartner.vercel.app/sitemap.xml

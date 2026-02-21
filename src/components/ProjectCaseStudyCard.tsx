@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { ExternalLink, ArrowRight, Zap, CheckCircle2 } from 'lucide-react';
 import { Project } from '../data/projects';
-import { useLanguage } from '../contexts/LanguageContext';
 
 interface ProjectCaseStudyCardProps {
   project: Project;
@@ -10,8 +9,6 @@ interface ProjectCaseStudyCardProps {
 }
 
 export default function ProjectCaseStudyCard({ project, index }: ProjectCaseStudyCardProps) {
-  const { t } = useLanguage();
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -46,7 +43,7 @@ export default function ProjectCaseStudyCard({ project, index }: ProjectCaseStud
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 bg-brand-600 text-white rounded-full font-bold text-sm shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-300"
           >
-            {t.nav.portfolio} <ExternalLink className="w-4 h-4" />
+            Live Demo <ExternalLink className="w-4 h-4" />
           </a>
         </div>
       </div>
@@ -91,7 +88,7 @@ export default function ProjectCaseStudyCard({ project, index }: ProjectCaseStud
             rel="noopener noreferrer"
             className="flex items-center justify-between w-full text-slate-900 font-bold text-xs sm:text-sm group/link"
           >
-            <span>{t.hero.ctaSecondary}</span>
+            <span>Explore Project</span>
             <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover/link:translate-x-1 transition-transform" />
           </a>
         </div>

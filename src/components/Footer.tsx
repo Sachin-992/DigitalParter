@@ -1,9 +1,6 @@
-import { MessageCircle, Instagram, Youtube, Mail, MapPin, Phone } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { MessageCircle, Instagram, Youtube, Facebook, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
-  const { t } = useLanguage();
-
   return (
     <footer className="bg-slate-900 text-slate-400 pt-12 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,7 +10,8 @@ export default function Footer() {
               Digital<span className="text-white">Partner</span>
             </a>
             <p className="text-sm leading-relaxed mb-8">
-              {t.footer.about}
+              Empowering local businesses and creators with affordable, high-quality digital solutions. 
+              Your growth is our mission.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -31,27 +29,29 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">{t.nav.services}</h4>
+            <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Services</h4>
             <ul className="space-y-4 text-sm">
-              <li><a href="#services" className="hover:text-brand-400 transition-colors">{t.services.items.websites.title}</a></li>
-              <li><a href="#services" className="hover:text-brand-400 transition-colors">{t.services.items.apps.title}</a></li>
-              <li><a href="#services" className="hover:text-brand-400 transition-colors">{t.services.items.portfolios.title}</a></li>
-              <li><a href="#services" className="hover:text-brand-400 transition-colors">{t.services.items.ecommerce.title}</a></li>
+              <li><a href="#" className="hover:text-brand-400 transition-colors">Business Websites</a></li>
+              <li><a href="#" className="hover:text-brand-400 transition-colors">Mobile App Development</a></li>
+              <li><a href="#" className="hover:text-brand-400 transition-colors">Influencer Portfolios</a></li>
+              <li><a href="#" className="hover:text-brand-400 transition-colors">E-commerce Solutions</a></li>
+              <li><a href="#" className="hover:text-brand-400 transition-colors">SEO & Digital Growth</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">{t.footer.quickLinks}</h4>
+            <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Quick Links</h4>
             <ul className="space-y-4 text-sm">
-              <li><a href="#who-it-is-for" className="hover:text-brand-400 transition-colors">{t.whoWeHelp.title}</a></li>
-              <li><a href="#portfolio" className="hover:text-brand-400 transition-colors">{t.nav.portfolio}</a></li>
-              <li><a href="#pricing" className="hover:text-brand-400 transition-colors">{t.nav.pricing}</a></li>
-              <li><a href="#about" className="hover:text-brand-400 transition-colors">{t.nav.contact}</a></li>
+              <li><a href="#who-it-is-for" className="hover:text-brand-400 transition-colors">Who It's For</a></li>
+              <li><a href="#portfolio" className="hover:text-brand-400 transition-colors">Our Portfolio</a></li>
+              <li><a href="#pricing" className="hover:text-brand-400 transition-colors">Pricing Plans</a></li>
+              <li><a href="#about" className="hover:text-brand-400 transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-brand-400 transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">{t.footer.contact}</h4>
+            <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Contact Us</h4>
             <ul className="space-y-5 text-sm">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-brand-500 shrink-0" />
@@ -73,16 +73,16 @@ export default function Footer() {
                   className="inline-flex items-center justify-center px-5 py-2.5 bg-brand-600 text-white rounded-xl font-bold text-xs hover:bg-brand-500 transition-all shadow-lg shadow-brand-600/20 group"
                 >
                   <MessageCircle className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" />
-                  {t.footer.whatsapp}
+                  Chat on WhatsApp
                 </a>
-                <p className="text-[10px] text-slate-500 mt-2 ml-1 italic">{t.footer.responseTime}</p>
+                <p className="text-[10px] text-slate-500 mt-2 ml-1 italic">Typical response time: &lt; 2 hours</p>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-10 border-t border-slate-800 text-center text-xs">
-          <p>© {new Date().getFullYear()} DigitalPartner Solutions. {t.footer.rights}</p>
+          <p>© {new Date().getFullYear()} DigitalPartner Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>

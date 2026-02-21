@@ -1,6 +1,5 @@
 import { LucideIcon, Check, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
-import { useLanguage } from '../contexts/LanguageContext';
 
 interface ServiceCardProps {
   title: string;
@@ -17,8 +16,6 @@ export default function ServiceCard({
   features,
   delay = 0 
 }: ServiceCardProps) {
-  const { t } = useLanguage();
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -58,7 +55,7 @@ export default function ServiceCard({
           rel="noopener noreferrer"
           className="inline-flex items-center text-brand-600 font-bold text-sm group/link"
         >
-          {t.pricing.cta}
+          Get Started
           <ArrowRight className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" />
         </a>
       </div>

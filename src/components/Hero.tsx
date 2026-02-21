@@ -1,10 +1,7 @@
 import { motion } from 'motion/react';
 import { MessageCircle, ArrowRight, CheckCircle2 } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Hero() {
-  const { t } = useLanguage();
-
   return (
     <section className="relative pt-32 pb-8 md:pt-48 md:pb-12 overflow-hidden">
       {/* Background Gradients */}
@@ -21,7 +18,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
           >
             <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-brand-50 text-brand-700 text-sm font-semibold mb-6 border border-brand-100">
-              🚀 {t.hero.badge}
+              🚀 Affordable Digital Solutions for Local Heroes
             </span>
           </motion.div>
 
@@ -31,7 +28,8 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-display font-bold tracking-tight text-slate-900 mb-6 leading-[1.1]"
           >
-            {t.hero.title}
+            Get Your Business Online <br />
+            <span className="text-brand-600">Without Breaking the Bank</span>
           </motion.h1>
 
           <motion.p
@@ -40,7 +38,8 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed"
           >
-            {t.hero.subtitle}
+            We build premium websites and mobile apps for shops, clinics, salons, and creators. 
+            Fast delivery, custom designs, and mobile-first approach—starting at unbeatable prices.
           </motion.p>
 
           <motion.div
@@ -56,13 +55,13 @@ export default function Hero() {
               className="btn-primary text-lg px-8 py-4 w-full sm:w-auto"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              {t.hero.ctaPrimary}
+              Get Started on WhatsApp
             </a>
             <a
               href="#portfolio"
               className="btn-secondary text-lg px-8 py-4 w-full sm:w-auto"
             >
-              {t.hero.ctaSecondary}
+              View Our Work
               <ArrowRight className="w-5 h-5 ml-2" />
             </a>
           </motion.div>
@@ -74,10 +73,10 @@ export default function Hero() {
             className="mt-16 flex flex-wrap justify-center gap-8 md:gap-12"
           >
             {[
-              t.trust.items.delivery.title,
-              t.trust.items.mobile.title,
-              t.pricing.plans.business.f7,
-              t.trust.items.support.title
+              "3-Day Delivery",
+              "100% Mobile Optimized",
+              "Free Domain & Hosting*",
+              "WhatsApp Support"
             ].map((item) => (
               <div key={item} className="flex items-center text-slate-500 font-medium">
                 <CheckCircle2 className="w-5 h-5 text-brand-500 mr-2" />
