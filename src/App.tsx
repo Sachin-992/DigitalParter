@@ -502,7 +502,7 @@ export default function App() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute bottom-6 left-6 right-6 p-4 glass rounded-2xl border border-white/40">
-                  <p className="text-slate-900 font-bold text-base">Software Developer & Entrepreneur</p>
+                  <p className="text-slate-900 font-bold text-base">Sachin - Software Developer & Entrepreneur</p>
                   <p className="text-brand-600 text-xs font-semibold uppercase tracking-wider"> .NET Developer</p>
                 </div>
               </div>
